@@ -1,15 +1,19 @@
 body {
     margin: 0;
+    background-color: #FFD887;
+    color: #973030;
+    
 }
 
 /* ///////////////////
 // 共通
 //////////////////// */
 
-.profile #profileLink, .works #works, .hobby #hobby, .contact #contact {
+.profile h1, .works h1, .hobby #hobby, .contact #contact {
     text-align: center;
     font-size: 40px;
     text-decoration: underline;
+    color: ;
 }
 
 /* ///////////////////
@@ -18,25 +22,25 @@ body {
 
 .nav {
     height: 70px;
+    width: 100%;
+    position: fixed;
+    background-color: #806C44;
 }
 
 .nav nav {
     height: 100%;
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
     display: block;
 }
 
 nav a {
     text-decoration: none;
     padding: 20px 20px;
+    font-size:20px;
+    color: #F2F2F2;
 }
 
-nav img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
 
 nav a:hover {
     color: orange;
@@ -48,6 +52,7 @@ nav a:hover {
 //////////////////// */
 
 .backimg img{
+    margin-top: 65px;
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -57,6 +62,9 @@ nav a:hover {
 // Profileセクション
 //////////////////// */
 
+.profile {
+    margin-bottom: 200px;
+}
 .profile .container {
     display: flex;
     justify-content: center;
@@ -73,10 +81,22 @@ nav a:hover {
     object-fit: cover;
 }
 
+.profile li {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.profile ul {
+    margin: 0 0 20px;
+    font-weight: normal;
+}
+
 /* ///////////////////
 // worksセクション
 //////////////////// */
-
+.work {
+    margin-bottom: 200px;
+}
 .works .container {
     display: flex;
     justify-content: center;
@@ -101,6 +121,10 @@ nav a:hover {
 // hobbyセクション
 //////////////////// */
 
+.hobby {
+    margin-bottom: 200px;
+}
+
 .hobby .container {
     display: flex;
     justify-content: center;
@@ -118,7 +142,7 @@ nav a:hover {
     justify-content: center;
 }
 .contact {
-    background-color: #BBFFFF;
+    background-color: #BFA165;
     width: 90%;
     margin-bottom: 100px;
 
@@ -150,23 +174,27 @@ nav a:hover {
     font-size: 25px;
 }
 
-.contact .btn {
-    width: 150px;
-    height: 50px;
-    border-radius: 7%;
-    background-color: #CCCCCC;
-    text-align: center;
-    line-height:50px;
-    
-}
 
 .contact .btn:hover {
     cursor: pointer;
-    background:#DDDDDD;
+    background:rgba(128, 108, 68, .5);
 }
 
-.contact .inputform input, .contact .inputform textarea {
-    color: silver;
+.contact .name, .contact .mail, .contact .message  {
+    color: rgba(128, 108, 68, .5);
+}
+
+.contact .btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 7%;
+    background-color: #806C44;
+    text-align: center;
+    line-height:50px;
+    font-weight: none;
+    color: #FFD887;
+    
 }
 
 /* ///////////////////

@@ -17,7 +17,7 @@
             <a href="#hobby">Hobby</a>
             <a href="#contact">Contact</a>
     </div>
-    
+
     <div class="backimg">
         <img src="img/background.jpg" alt="Top Image">
 
@@ -25,7 +25,8 @@
     </nav>
 
     <section class="profile">
-        <h1 id="profileLink">Profile</h1>
+        <div id="profileLink"></div>
+        <h1>Profile</h1>
         <section class="container">
 
             <img src="img/prof.jpg" alt="profile">
@@ -51,7 +52,8 @@
 
 
     <section class="works">
-        <h1 id="works">Works</h1>
+        <div id="works"></div>
+        <h1>Works</h1>
         <section class="container">
             <section>
                 <img src="img/sample1.jpg" alt="すごいホームページ" title="すごいホームページ">
@@ -90,10 +92,12 @@
             <h1 id="contact">Contact</h1>
             <section class="container">
                 <section class="inputform">
-                    <input type="text" value="お名前" onClick="this.value=''">
-                    <input type="text" value="メールアドレス" onclick="this.value=''">
-                    <textarea onclick="this.value=''">メッセージ</textarea>
-                    <div class="btn">送信</div>
+                    <form>
+                        <input type="text" class="name" value="お名前" onClick="this.value=''">
+                        <input type="text" class="mail" value="メールアドレス" onclick="this.value=''">
+                        <textarea class="message" onclick="this.value=''">メッセージ</textarea>
+                        <p><input class="btn" type="submit" value="送信"></p>
+                    </form>
                 </section>
             </section>
         </section>
@@ -102,7 +106,6 @@
     <footer>
         <p>(c) wataru.corp</p>
     </footer>
-
 
 </body>
 
