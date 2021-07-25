@@ -2,69 +2,108 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <title>太郎のポートフォリオ</title>
-  <link rel="icon" href="favicon.ico">
-  <meta name="description" content="太郎のポートフォリオです">
-  <link rel="stylesheet" href="css/style.css">
-
-
-
+    <meta charset="utf-8">
+    <title>私のポートフォリオ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.png">
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div class="icon">
-        <img src="img/taro.png" width="120" height="120" alt="太郎のアイコン" title="太郎の画像">
-      </div>
-      <div class="info">
-        <h1>山田太郎</h1>
-        <p>UI/UXデザイナです。ただいま更新テストちゅう</p>
-        <ul>
-          <li>
-            <a href="http://dotinstall.com" target="_blank">
-              <img src="img/blog.png" width="20" height="20" alt="blogアイコン" title="blogアイコン">
-            </a>
-          </li>
-          <li>
-            <a href="http://dotinstall.com" target="_blank">
-              <img src="img/photos.png" width="20" height="20" alt="photoアイコン" title="photoアイコン">
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div class="nav">
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#profileLink">Profile</a>
+            <a href="#works">Works</a>
+            <a href="#hobby">Hobby</a>
+            <a href="#contact">Contact</a>
     </div>
-  </header>
+    
+    <div class="backimg">
+        <img src="img/background.jpg" alt="Top Image">
 
-  <section class="works">
-    <h1>work</h1>
+    </div>
+    </nav>
 
-    <section>
-      <img src="img/work1.png" widh="400" height="260" alt="勇者ゲーム" title="勇者ゲーム">
-      <h1>勇者ゲーム</h1>
-      <p>楽しいアプリです楽しいアプリです楽しいアプリです楽しいアプリです楽しいアプリです楽しいアプリです</p>
+    <section class="profile">
+        <h1 id="profileLink">Profile</h1>
+        <section class="container">
+
+            <img src="img/prof.jpg" alt="profile">
+
+            <section class="list">
+                <li>名前
+                    <ul>ワタル</ul>
+                </li>
+                <li>生年月日
+                    <ul>××××</ul>
+                </li>
+                <li>住まい
+                    <ul>埼玉</ul>
+                </li>
+                <li>好きな言葉
+                    <ul>死ぬこと以外かすり傷</ul>
+                </li>
+            </section>
+        </section>
+
+    </section>
     </section>
 
-    <section>
-      <img src="img/work2.png" widh="400" height="260" alt="宝探しゲーム" title="宝探しゲーム">
-      <h1>宝探しゲーム</h1>
-      <p>楽しいアプリです楽しいアプリです楽しいアプリです楽しいアプリです楽しいアプリです楽しいアプリです</p>
+
+    <section class="works">
+        <h1 id="works">Works</h1>
+        <section class="container">
+            <section>
+                <img src="img/sample1.jpg" alt="すごいホームページ" title="すごいホームページ">
+                <p>すごいホームページ</p>
+            </section>
+            <section>
+                <img src="img/sample2.jpg" alt="とんでもないホームページ" title="とんでもないホームページ">
+                <p>とんでもないホームページ</p>
+            </section>
+            <section>
+                <img src="img/sample3.jpg" alt="やばいホームページ" title="やばいホームページ">
+                <p>やばいホームページ</p>
+            </section>
+
+        </section>
     </section>
 
-    <section>
-      <img src="img/work1.png" widh="400" height="260" alt="神経衰弱ゲーム" title="神経衰弱ゲーム">
-      <h1>神経衰弱ゲーム</h1>
-      <p>楽しいアプリです楽しいアプリです楽しいアプリです楽しいアプリです楽しいアプリです楽しいアプリです</p>
-    </section>
-    <section>
+    <section class="hobby">
+        <h1 id="hobby">Hobby</h1>
+
+        <section class="container">
+            <section>
+                <img src="img/training.png" alt="training">
+                <p>筋トレ</p>
+            </section>
+            <section>
+                <img src="img/bike.png" alt="bike">
+                <p>バイクツーリング</p>
+            </section>
+        </section>
 
     </section>
 
-  </section>
-  <footer>
-    <p>(c) dot install</p>
-  </footer>
+    <section class="contact_container">
+        <section class="contact">
+            <h1 id="contact">Contact</h1>
+            <section class="container">
+                <section class="inputform">
+                    <input type="text" value="お名前" onClick="this.value=''">
+                    <input type="text" value="メールアドレス" onclick="this.value=''">
+                    <textarea onclick="this.value=''">メッセージ</textarea>
+                    <div class="btn">送信</div>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <footer>
+        <p>(c) wataru.corp</p>
+    </footer>
+
+
 </body>
 
 </html>
